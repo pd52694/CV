@@ -1,95 +1,142 @@
 body {
-
-  }
+  margin: 0;
+}
 
 /****************   Nav Section **********************/
 nav {
-	
+  background-color: #ed0b93;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /***********************  Footer Section   **************************/
 footer {
-	
+  width: 100%;
+  background-color: #ed0b93;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /*********** Splash Page ************************/
 header {
-
+  background-color: #0ba7e0;
+  padding: 20px;
+  text-align: center;
 }
 
 header h1 {
-  
+  font-family: 'Montserrat', sans-serif;
+  color: #e21c1c;
 }
 
 header img {
+  border: 2px solid #000000;
 }
 
 .address {
- 
+  font-weight: bold;
 }
 
 .tagline {
-  
+  font-style: italic;
 }
 
 /************* Sections ********************/
 hr {
-
+  background-color: #000000;
+  padding: 0.5px;
+  text-align: center;
 }
 
 section h3 {
-  
+  font-family: 'Montserrat', sans-serif;
+  color: #e21c1c;
 }
 
 section dl {
-  
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 4px 16px;
+  align-items: start;
+  margin: 0 0 16px 0;
 }
 
 section ul {
-
+  list-style-type: square;
 }
 
 section a {
-
+  color: #0ba7e0;
+  text-decoration: none;
 }
 
 section a:hover {
+  text-decoration: underline;
 }
 
 /**************   Projects   *****************/
 .three-col {
-	
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
 }
 
 .card img {
-
+  display: block;
+  margin-bottom: 15px;
 }
 
 .card {
-  
+  padding: 10px; 
+  border-radius: 8px;
+  background-color: #45db95;
 }
 
 /**************   Responsiveness   *****************/
 @media (max-width: 680px) {
     nav {
-      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .three-col {
-      
+      grid-template-columns: 1fr;
     }
 }
 
 /**************   Contact Page   *****************/
 .one-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
 
+.one-col form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
 }
 
 input {
-  
-
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 textarea {
-   
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+button {
+  width: 425px;
 }
