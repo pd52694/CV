@@ -1,100 +1,124 @@
 body {
   margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #1f2a44;
+  background-color: #f7f8fb;
+  line-height: 1.6;
 }
 
 /****************   Nav Section **********************/
 nav {
-  background-color: #ed0b93;
-  padding: 10px;
+  background-color: #1f2a44;
+  padding: 12px 24px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
 }
 
 /***********************  Footer Section   **************************/
 footer {
   width: 100%;
-  background-color: #ed0b93;
-  padding: 10px;
+  background-color: #1f2a44;
+  padding: 16px 24px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: #ffffff;
 }
 
 /*********** Splash Page ************************/
 header {
-  background-color: #0ba7e0;
-  padding: 20px;
+  background-color: #e9edf6;
+  padding: 28px 20px;
   text-align: center;
 }
 
 header h1 {
   font-family: 'Montserrat', sans-serif;
-  color: #e21c1c;
+  color: #1f2a44;
+  font-size: 2.2rem;
+  letter-spacing: 0.5px;
 }
 
 header img {
-  border: 2px solid #000000;
+  border: 3px solid #1f2a44;
+  border-radius: 6px;
 }
 
 .address {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .tagline {
   font-style: italic;
+  max-width: 760px;
+  margin: 10px auto 0;
 }
 
 /************* Sections ********************/
 hr {
-  background-color: #000000;
-  padding: 0.5px;
-  text-align: center;
+  border: none;
+  height: 1px;
+  background-color: #d4d9e2;
+  margin: 24px auto;
+  width: 90%;
 }
 
 section h3 {
   font-family: 'Montserrat', sans-serif;
-  color: #e21c1c;
+  color: #1f2a44;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
 }
 
 section dl {
   display: grid;
   grid-template-columns: max-content 1fr;
-  gap: 4px 16px;
+  gap: 6px 18px;
   align-items: start;
   margin: 0 0 16px 0;
 }
 
 section ul {
-  list-style-type: square;
+  list-style-type: circle;
+  padding-left: 20px;
 }
 
 section a {
-  color: #0ba7e0;
+  color: #2a5bd7;
   text-decoration: none;
+  font-weight: 600;
 }
 
 section a:hover {
   text-decoration: underline;
+  color: #1f2a44;
 }
 
 /**************   Projects   *****************/
 .three-col {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: 18px;
 }
 
 .card img {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .card {
-  padding: 10px; 
+  padding: 16px;
   border-radius: 8px;
-  background-color: #45db95;
+  background-color: #ffffff;
+  border: 1px solid #d4d9e2;
+  box-shadow: 0 8px 20px rgba(31, 42, 68, 0.08);
 }
 
 /**************   Responsiveness   *****************/
@@ -103,10 +127,12 @@ section a:hover {
       display: flex;
       flex-direction: column;
       align-items: center;
+      gap: 8px;
     }
 
     .three-col {
       grid-template-columns: 1fr;
+      justify-items: center;
     }
 }
 
@@ -116,6 +142,7 @@ section a:hover {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  gap: 12px;
 }
 
 .one-col form {
@@ -123,20 +150,39 @@ section a:hover {
   flex-direction: column;
   width: 100%;
   max-width: 400px;
+  background-color: #ffffff;
+  border: 1px solid #d4d9e2;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(31, 42, 68, 0.08);
 }
 
 input {
-  padding: 8px;
+  padding: 10px;
   margin-bottom: 10px;
   width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #c7ceda;
+  border-radius: 6px;
+  font-family: "Montserrat", sans-serif;
 }
 
 textarea {
-  padding: 8px;
+  padding: 10px;
   margin-bottom: 10px;
   width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #c7ceda;
+  border-radius: 6px;
+  font-family: "Montserrat", sans-serif;
 }
 
 button {
-  width: 425px;
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: #1f2a44;
+  color: #ffffff;
+  font-weight: 600;
 }
