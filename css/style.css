@@ -16,6 +16,15 @@ nav {
   color: #ffffff;
 }
 
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: #a8c4ff;
+}
+
 /***********************  Footer Section   **************************/
 footer {
   width: 100%;
@@ -27,6 +36,15 @@ footer {
   align-items: center;
   justify-content: center;
   color: #ffffff;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:visited {
+  color: #a8c4ff;
 }
 
 /*********** Splash Page ************************/
@@ -41,6 +59,12 @@ header h1 {
   color: #1f2a44;
   font-size: 2.2rem;
   letter-spacing: 0.5px;
+  transition: letter-spacing 0.3s ease, color 0.3s ease;
+}
+
+header h1:hover {
+  letter-spacing: 3px;
+  color: #2a5bd7;
 }
 
 header img {
@@ -67,11 +91,23 @@ hr {
   width: 90%;
 }
 
+section {
+  padding-left: 24px;
+}
+
 section h3 {
   font-family: 'Montserrat', sans-serif;
   color: #1f2a44;
   font-size: 1.4rem;
   margin-bottom: 8px;
+  border-left: 3px solid #2a5bd7;
+  padding-left: 10px;
+  transition: border-left-width 0.3s ease, color 0.3s ease;
+}
+
+section h3:hover {
+  border-left-width: 6px;
+  color: #2a5bd7;
 }
 
 section dl {
@@ -99,26 +135,65 @@ section a:hover {
 }
 
 /**************   Projects   *****************/
+.projects {
+  padding-left: 0;
+}
+
+.projects > h3 {
+  margin-left: 24px;
+}
+
 .three-col {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+  gap: 5px;
 }
 
 .card img {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   width: 100%;
   height: auto;
+  max-height: 250px;
+  object-fit: contain;
   border-radius: 8px;
 }
 
 .card {
-  padding: 16px;
+  padding: 12px;
   border-radius: 8px;
   background-color: #ffffff;
   border: 1px solid #d4d9e2;
   box-shadow: 0 8px 20px rgba(31, 42, 68, 0.08);
+  font-size: 0.85rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(42, 91, 215, 0.15);
+}
+
+.three-col > .card:first-child,
+.three-col > .card:nth-child(2) {
+  padding-right: 4px;
+}
+
+.card h3 {
+  font-size: 1rem;
+  margin: 0 0 6px 0;
+  border-left: none;
+  padding-left: 0;
+  transition: none;
+}
+
+.card h3:hover {
+  border-left-width: 0;
+  color: #1f2a44;
+}
+
+.card li {
+  margin-bottom: 8px;
 }
 
 /**************   Responsiveness   *****************/
